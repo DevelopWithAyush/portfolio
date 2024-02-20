@@ -7,7 +7,7 @@ require('dotenv').config();
 require("./Conn/db");
 
 // Define the port
-const port = process.env.PORT;
+const port = 5000;
 
 // Configure CORS
 const corsOptions = {
