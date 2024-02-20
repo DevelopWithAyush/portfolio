@@ -6,7 +6,7 @@ function ContactState(props) {
     const addcontact = async(firstName,lastName,email,message)=>{
 
         try {
-            const response = await fetch(`http://localhost:5000/api/contact/addcontact`,{
+            const response = await fetch(`https://portfolio-nu-weld-39.vercel.app//api/contact/addcontact`,{
                 method:'POST',
                 headers:{
                     'Content-type':'application/json'
