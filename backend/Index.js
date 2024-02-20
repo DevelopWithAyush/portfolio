@@ -11,7 +11,7 @@ const port = 5000;
 
 // Configure CORS
 const corsOptions = {
-    origin: [""],
+    origin: ["https://portfolio-bv6a.vercel.app/"],
     methods: ["POST", "GET"],
     credentials: true
 };
