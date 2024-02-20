@@ -24,6 +24,9 @@ app.use(express.json());
 
 // Define routes
 app.use("/api/contact", require("./routers/contact"));
+app.get("/",(req,res)=>{
+    res.send("hello world")
+})
 
 // Start the server
 app.listen(port, () => {
