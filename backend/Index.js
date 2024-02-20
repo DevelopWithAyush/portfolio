@@ -11,7 +11,7 @@ const port = process.env.PORT;
 
 // Configure CORS
 const corsOptions = {
-    origin: ["https://deploy-mern-1whq.vercel.app"],
+    origin: [""],
     methods: ["POST", "GET"],
     credentials: true
 };
