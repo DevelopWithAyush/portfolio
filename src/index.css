@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+
+
+html::-webkit-scrollbar {
+    width: 0.2rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar-track {
+    background: rgb(46, 46, 46);
+    border-radius: 1rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #01FFD1;
+    border-radius: 1rem;
+}
+.connect{
+    transform: translateY(66px);
+    transition: all ease-in-out 400ms ;
+}
+.connect-parent:hover .connect{ 
+
+    transform: translateY(-69px);
+}
