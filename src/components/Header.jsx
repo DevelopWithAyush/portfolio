@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import {  Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ setConnect }) => {
 
   const [nav, setNav] = useState({ top: "0%" });
   const [blur,setBlur] = useState(false)
@@ -36,7 +36,7 @@ const Header = () => {
       className={`z-20 bg-black ${blur?"bg-opacity-50":"bg-opacity-0"} duration-500 fixed top-0 left-1/2 -translate-x-1/2 container mx-auto max-w-[88rem] flex flex-row items-center justify-center md:justify-between py-[10px] rounded-xl px-[10px]`}>
       <Logo />
       <Navbar />
-      <ConnectButton />
+      <ConnectButton setConnect={setConnect} />
     </header>
   );
 };
@@ -72,9 +72,9 @@ const Navbar = () => {
   );
 };
 
-const ConnectButton = () => {
+const ConnectButton = ({ setConnect }) => {
   return (
-    <button className="hidden md:flex flex-row items-center justify-center w-[180px] h-[52px] bg-white bg-opacity-5 gap-4 rounded-xl connect-parent overflow-hidden border-[1px] border-solid border-[#01FFD1] border-opacity-10 " >
+    <button onClick={() => setConnect(true)} className="hidden md:flex flex-row items-center justify-center w-[180px] h-[52px] bg-white bg-opacity-5 gap-4 rounded-xl connect-parent overflow-hidden border-[1px] border-solid border-[#01FFD1] border-opacity-10 " >
       <div className="flex flex-col  gap-[100px] connect "> 
       <span className="text-[24px] font-semibold text-[#FFF]">Connect</span>
       <span className="text-[24px] font-semibold text-[#FFF]">Connect</span>

@@ -6,7 +6,7 @@ import Services from "../components/Services"
 import Steps from "../components/Steps"
 import Tech from "../components/Tech"
 
-const Home = () => {
+const Home = ({ setConnect }) => {
   return (
       <>
       <Herosection/>
@@ -15,7 +15,7 @@ const Home = () => {
       <Tech/>
       <Services/>
       <Steps/>
-      <CallToAction/>
+      <CallToAction setConnect={setConnect} />
       </>
   )
 }

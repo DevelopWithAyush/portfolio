@@ -1,4 +1,6 @@
 import myIcon from '../assets/images/myIcon.png'
+import chatapp from '../assets/images/chatapp.png'
+import portfolio from '../assets/images/portfolio.png'
 const Project = () => {
 
     return (
@@ -20,7 +22,21 @@ const Project = () => {
                 <div className="col-span-1 h-full  flex items-center flex-col ">
                     <DownLine />
                 </div>
-                <div className="col-span-11  pt-[75px]   pb-[100px] md:pb-[140px] xl:pb-[200px] flex flex-col items-center justify-center">
+                <div className="col-span-11  pt-[75px]    grid grid-cols-12 gap-10">
+                    <a href='/' className='col-span-4 flex flex-col items-start justify-start gap-5 bg-white bg-opacity-10 rounded-2xl px-3 py-3 '>
+                        <img className='w-full rounded-[4px]' src={chatapp} alt="chatapp" />
+                        <div className=' flex flex-col items-start justify-start gap-3 '>
+                            <p className='font-semibold text-[24px]'>Rapid</p>
+                            <p className='font-normal text-[16px] text-[#cfcfcf]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tempora, accusamus blanditiis similique voluptates alias non provident quaerat illo quasi, quo eum natus ut.</p>
+                      </div>
+                    </a>
+                    <a href='/' className='col-span-4 flex flex-col items-start justify-start gap-5 bg-white bg-opacity-10 rounded-2xl px-3 py-3 '>
+                        <img className='w-full rounded-[4px]' src={portfolio} alt="chatapp" />
+                        <div className=' flex flex-col items-start justify-start gap-3 '>
+                            <p className='font-semibold text-[24px]'>developwithayush</p>
+                            <p className='font-normal text-[16px] text-[#cfcfcf]'>Lorem lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tempora, accusamus blanditiis similique voluptates alias non provident quaerat illo quasi, quo eum natus ut.</p>
+                      </div>
+                    </a>
 
                     
 

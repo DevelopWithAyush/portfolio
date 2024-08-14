@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { LiaAngleRightSolid } from "react-icons/lia";
 
-const CallToAction = () => {
+const CallToAction = ({ setConnect }) => {
   const [arrow, setarrow] = useState({ width: "0px" });
   return (
     <section
@@ -34,6 +34,7 @@ const CallToAction = () => {
             {`"Ready to elevate your online presence ?"`}
           </p>
           <button
+            onClick={() => setConnect(true)}
             onMouseLeave={() => {
               return setarrow({ width: "0px" });
             }}

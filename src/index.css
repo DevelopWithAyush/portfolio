@@ -6,6 +6,12 @@
 html{
     scroll-behavior: smooth;
 }
+@font-face {
+    font-family:Akira-Expanded;
+    src: local("Akira-Expanded"),
+    url('./assets/font/Akira-Expanded.ttf') format("truetype");
+}
+
 body {
     background-color: black;
     color: white;
