@@ -1,6 +1,6 @@
 import myIcon from '../assets/images/myIcon.png'
 import chatapp from '../assets/images/chatapp.png'
-import portfolio from '../assets/images/portfolio.png'
+import portfolio from '../assets/images/Portfolio.png'
 const Project = () => {
 
     return (
