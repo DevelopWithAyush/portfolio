@@ -10,7 +10,7 @@ const CallToAction = ({ setConnect }) => {
     >
       <div className=" flex flex-col items-center justify-center gap-[35px]">
         <div className="p-6 border border-opacity-10 border-white overflow-hidden rounded-3xl relative  ">
-          <div className="bg-purple-500 w-1/2 h-1/2 -translate-x-1/2 -translate-y-1/2 absolute top-0 left-0 blur-[90px]" />
+          <div className="bg-[#01FFD1] w-1/2 h-1/2 -translate-x-1/2 -translate-y-1/2 absolute top-0 left-0 blur-[90px]" />
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="2"
