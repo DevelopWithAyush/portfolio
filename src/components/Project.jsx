@@ -57,14 +57,14 @@ const Project = () => {
         <div className="col-span-1 h-full  flex items-center flex-col ">
           <DownLine />
         </div>
-        <div className="col-span-11  pt-[75px]    grid grid-cols-12 gap-10">
+        <div className="col-span-11  pt-[75px] px-5    grid grid-cols-12 gap-10">
           {projects.map(({ name, img, url, description }, index) => {
             return (
               <a
                 target="blank"
                 key={index}
                 href={url}
-                className="col-span-4 flex flex-col items-start justify-start gap-5 bg-white bg-opacity-10 rounded-2xl px-3 py-3 "
+                className=" col-span-12 md:col-span-6  xl:col-span-4 flex flex-col items-start justify-start gap-5 bg-white bg-opacity-10 rounded-2xl px-3 py-3 "
               >
                 <img className="w-full rounded-[4px]" src={img} alt={url} />
                 <div className=" flex flex-col items-start justify-start gap-3 ">

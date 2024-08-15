@@ -37,7 +37,7 @@ const Steps = () => {
         <div className="col-span-1 h-full  flex items-center flex-col ">
           <DownLine />
         </div>
-        <div className="col-span-11  pt-[150px]  pb-[300px] flex flex-col items-center justify-center px-10">
+        <div className="col-span-11  pt-[150px]  pb-[300px] flex flex-col items-center justify-center px-3 lg:px-10">
           <div className=" flex flex-col items-center justify-center py-6 px-6 bg-white bg-opacity-5 max-w-[700px] rounded-xl gap-5 border-[1px] border-solid border-[#01FFD1] border-opacity-10">
             {points.map((point, index) => {
                 return <Points key={index} point={point} index={index} />;

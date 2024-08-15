@@ -16,21 +16,21 @@ const Services = () => {
         </span>
       </p>
       <div className="grid-cols-12 grid items-center  gap-10">
-        <div className=" col-span-4 py-6 px-6 flex flex-col items-start justify-center gap-10    bg-white bg-opacity-5 rounded-xl border-[1px] border-opacity-10 border-solid border-[#01FFD1] ">
+        <div className="col-span-12 md:col-span-6    xl:col-span-4 py-6 px-6 flex flex-col items-start justify-center gap-10    bg-white bg-opacity-5 rounded-xl border-[1px] border-opacity-10 border-solid border-[#01FFD1] ">
           <h3 className="text-[32px] font-semibold">Web Development</h3>
           <p className="text-[20px] ">
             Crafting bespoke websites tailored to your brand's identity,
             ensuring seamless functionality and user experience..
           </p>
         </div>
-        <div className=" col-span-4 py-6 px-6 flex flex-col items-start justify-center gap-10    bg-white bg-opacity-5 rounded-xl border-[1px] border-opacity-10 border-solid border-[#01FFD1] ">
+        <div className="col-span-12 md:col-span-6    xl:col-span-4 py-6 px-6 flex flex-col items-start justify-center gap-10    bg-white bg-opacity-5 rounded-xl border-[1px] border-opacity-10 border-solid border-[#01FFD1] ">
           <h3 className="text-[32px] font-semibold">Video Editing</h3>
           <p className="text-[20px] ">
             Transforming raw footage into captivating visual stories that engage
             and inspire your audience.
           </p>
         </div>
-        <div className=" col-span-4 py-6 px-6 flex flex-col items-start justify-center gap-10    bg-white bg-opacity-5 rounded-xl border-[1px] border-opacity-10 border-solid border-[#01FFD1] ">
+        <div className="col-span-12 md:col-span-6    xl:col-span-4 py-6 px-6 flex flex-col items-start justify-center gap-10    bg-white bg-opacity-5 rounded-xl border-[1px] border-opacity-10 border-solid border-[#01FFD1] ">
           <h3 className="text-[32px] font-semibold">UI/UX </h3>
           <p className="text-[20px] ">
             Crafting bespoke websites tailored to your brand's identity,
