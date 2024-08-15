@@ -14,7 +14,7 @@ const Aboutme = () => {
           <Emoji />
         </div>
         <div
-          className="col-span-11   pt-[140px] xl:pt-[230px]
+          className="col-span-11 self-end  
               "
         >
           <P />
@@ -24,8 +24,8 @@ const Aboutme = () => {
         <div className="col-span-1 h-full  flex items-center flex-col ">
           <DownLine />
         </div>
-        <div className="col-span-11  pt-[100px]  flex flex-col items-center justify-center">
-                  <p className="text-[#B7B7B7] text-[20px] font-medium leading-[139%] max-w-[800px] rounded-xl px-12 py-6 bg-white bg-opacity-5">
+        <div className="col-span-11  pt-[100px]  flex flex-col items-center justify-center pr-3 md:pr-5 xl:pr-7">
+                  <p className="text-[#B7B7B7] text-[16px] md:text-[20px] font-medium leading-[139%] max-w-[800px] rounded-xl px-6 md:px-7 xl:px-12 py-6 bg-white bg-opacity-5">
                       My name is <span className="text-[#01FFD1]">Ayush Dubey</span>, and
                       I am a 21-year-old web developer and video editor. Over the past two
                       years, I have immersed myself in the world of web development,
@@ -80,7 +80,7 @@ const DownLine = () => {
 const Emoji = () => {
   return (
     <div
-      className="relative text-[32px] leading-[32px] md:text-[48px] md:leading-[48px] xl:text-[56px] xl:leading-[56px]   font-bold "
+      className="relative w-[32px]  md:w-[48px]  xl:w-[56px]  "
       style={{
         transitionDuration: ".5s",
         opacity: "1",
@@ -88,7 +88,7 @@ const Emoji = () => {
       }}
     >
       {/* <div className=" bg-[#3cfc46] w-[50%] h-[50%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 blur-[20px]"></div> */}
-      <img src={myIcon} alt="" />
+      <img className="w-full"  src={myIcon} alt="" />
     </div>
   );
 };
@@ -111,10 +111,10 @@ const P = () => {
 
 const Background = () => {
   return (
-    <>
+    <div className=" hidden lg:flex">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="501"
+        w="501"
         height="840"
         viewBox="0 0 501 840"
         fill="none"
@@ -130,7 +130,7 @@ const Background = () => {
             id="filter0_f_12_25"
             x="0.5"
             y="0.5"
-            width="1315"
+            w="1315"
             height="839"
             filterUnits="userSpaceOnUse"
             colorInterpolationFilters="sRGB"
@@ -149,7 +149,7 @@ const Background = () => {
           </filter>
         </defs>
       </svg>
-    </>
+    </div>
   );
 };
 export default Aboutme;

@@ -6,7 +6,7 @@ const CallToAction = ({ setConnect }) => {
   return (
     <section
       id="testimonial"
-          className=" container mx-auto max-w-[88rem] overflow-hidden  relative flex flex-col items-center justify-center border-[1px] border-solid border-[#01FFD1] border-opacity-10  px-[18px] bg-white bg-opacity-5 backdrop-blur-[25px] rounded-3xl  py-[70px] md:py-[98px] xl:py-[140px] gap-[75px] md:gap-[105px] xl:gap-[150px]"
+          className=" container mx-auto max-w-[88rem]   overflow-hidden  relative flex flex-col items-center justify-center border-[1px] border-solid border-[#01FFD1] border-opacity-10  px-[18px] bg-white bg-opacity-5 backdrop-blur-[25px] rounded-3xl  py-[70px] md:py-[98px] xl:py-[140px] gap-[75px] md:gap-[105px] xl:gap-[150px]"
     >
       <div className=" flex flex-col items-center justify-center gap-[35px]">
         <div className="p-6 border border-opacity-10 border-white overflow-hidden rounded-3xl relative  ">
