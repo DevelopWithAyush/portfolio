@@ -4,6 +4,7 @@ import axios from "axios";
 
 export const HandleContext = createContext();
 const server = import.meta.env.VITE_API_URL;
+console.log(server)
 const HandleState = ({ children }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
