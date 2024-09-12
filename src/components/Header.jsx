@@ -39,7 +39,7 @@ const Header = ({ setConnect }) => {
       style={{ top: nav.top }}
       className={`z-20 bg-black ${
         blur ? "bg-opacity-50" : "bg-opacity-0"
-      } duration-500 fixed top-0 left-1/2 -translate-x-1/2 container mx-auto max-w-[88rem] flex flex-row items-center justify-center md:justify-between py-[10px] rounded-xl px-[10px]`}
+      } duration-500 fixed top-0 left-1/2 -translate-x-1/2 container mx-auto max-w-[88rem] flex flex-row items-center justify-between  py-[10px] rounded-xl px-[10px]`}
     >
       <Logo />
       <Navbar />
@@ -65,11 +65,11 @@ const Logo = () => {
         to={"/"}
         className="flex flex-col  items-start justify-start w-[220px] h-[40px] align-middle overflow-hidden  "
       >
-        <div className="flex flex-col items-center gap-[100px] translate-y-[0%] hover:-translate-y-[81%] duration-500 ease-in-out capitalize md:normal-case ">
-          <h1 className="text-white font-bold text-[24px] ">
+        <div className="flex flex-col items-center gap-[100px] translate-y-[0%] hover:-translate-y-[81%] duration-500 ease-in-out  md:normal-case ">
+          <h1 className="text-white font-bold text-[20px] md:text-[24px] ">
             developwithayush
           </h1>
-          <h1 className="text-white font-bold text-[24px] ">
+          <h1 className="text-white font-bold text-[20px] md:text-[24px] ">
             developwithayush
           </h1>
         </div>
@@ -121,17 +121,17 @@ const Navbar = () => {
 const ConnectButton = ({ buttonName }) => {
   const location = useLocation();
   return (
-    <div className="hidden md:flex flex-row items-center justify-center w-[180px] h-[52px] bg-white bg-opacity-5 gap-4 rounded-xl connect-parent overflow-hidden border-[1px] border-solid border-[#01FFD1] border-opacity-10 ">
+    <div className=" flex flex-row items-center justify-center px-3 md:px-6 h-[40px] md:h-[52px] bg-white bg-opacity-5 md:gap-4 gap-2 rounded-xl connect-parent overflow-hidden border-[1px] border-solid border-[#01FFD1] border-opacity-10 ">
       <div className="flex flex-col  gap-[100px] connect ">
-        <span className="text-[24px] font-semibold text-[#FFF]">
+        <span className=" text-[16px] md:text-[24px] font-semibold text-[#FFF]">
           {buttonName}
         </span>
-        <span className="text-[24px] font-semibold text-[#FFF]">
+        <span className=" text-[16px] md:text-[24px] font-semibold text-[#FFF]">
           {buttonName}
         </span>
       </div>
       {location.pathname === "/connect" ? (
-        <FiLogOut className="text-[20px] text-[#FFB800] " />
+        <FiLogOut className="text-[16px] md:text-[20px] text-[#FFB800] " />
       ) : (
         <ConnectSvg />
       )}
@@ -143,8 +143,8 @@ const ConnectSvg = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="36"
-      height="36"
+      className=" w-[24px] md:w-[36px]  h-[24px] md:h-[36px]"
+  
       viewBox="0 0 36 36"
       fill="none"
     >

@@ -22,7 +22,7 @@ const App = () => {
           <Header setConnect={setConnect} />
           <Connect connect={connect} setConnect={setConnect} />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home setConnect={setConnect} />} />
             <Route
               path="/connect"
               element={

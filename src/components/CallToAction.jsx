@@ -1,15 +1,18 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { LiaAngleRightSolid } from "react-icons/lia";
+import { HandleContext } from "../hooks/HandleState";
+import { Link } from "react-router-dom";
 
 const CallToAction = ({ setConnect }) => {
-  const [arrow, setarrow] = useState({ width: "0px" });
+  const { user } = useContext(HandleContext);
+
   return (
     <section
       id="testimonial"
-          className=" container mx-auto max-w-[88rem]   overflow-hidden  relative flex flex-col items-center justify-center border-[1px] border-solid border-[#01FFD1] border-opacity-10  px-[18px] bg-white bg-opacity-5 backdrop-blur-[25px] rounded-3xl  py-[70px] md:py-[98px] xl:py-[140px] gap-[75px] md:gap-[105px] xl:gap-[150px]"
+      className="container mx-auto max-w-[88rem] overflow-hidden relative flex flex-col items-center justify-center border-[1px] border-solid border-[#01FFD1] border-opacity-10 px-[18px] bg-white bg-opacity-5 backdrop-blur-[25px] rounded-3xl py-[70px] md:py-[98px] xl:py-[140px] gap-[75px] md:gap-[105px] xl:gap-[150px]"
     >
-      <div className=" flex flex-col items-center justify-center gap-[35px]">
-        <div className="p-6 border border-opacity-10 border-white overflow-hidden rounded-3xl relative  ">
+      <div className="flex flex-col items-center justify-center gap-[35px]">
+        <div className="p-6 border border-opacity-10 border-white overflow-hidden rounded-3xl relative">
           <div className="bg-[#01FFD1] w-1/2 h-1/2 -translate-x-1/2 -translate-y-1/2 absolute top-0 left-0 blur-[90px]" />
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -30,33 +33,44 @@ const CallToAction = ({ setConnect }) => {
           </svg>
         </div>
         <div className="flex flex-col items-center justify-center gap-5">
-          <p className="text-[24px] md:text-[33.6px] xl:text-[48px] text-center  font-bold">
-            {`"Ready to elevate your online presence ?"`}
+          <p className="text-[24px] md:text-[33.6px] xl:text-[48px] text-center font-bold">
+            {`"Ready to elevate your online presence?"`}
           </p>
-          <button
-            onClick={() => setConnect(true)}
-            onMouseLeave={() => {
-              return setarrow({ width: "0px" });
-            }}
-            onMouseEnter={() => {
-              return setarrow({ width: "20px" });
-            }}
-            className="relative py-2 px-6 rounded-xl border-opacity-10 flex items-center gap-5  text-[24px] bg-black bg-opacity-5 backdrop-blur-[25px]  border border-[#01FFD1] "
-          >
-            <span>Schedule your meeting </span>
-            <div className="flex items-center relative   ">
-              <div
-                className="w-5 h-[2px] bg-white duration-200"
-                style={arrow}
-              />
-              <span className="absolute right-0 translate-x-1/2">
-                <LiaAngleRightSolid />
-              </span>
-            </div>
-          </button>
+          {user ? (
+            <Link to="/connect">
+              <ScheduleMeeting />
+            </Link> 
+          ): (
+              <button onClick = { (e) => {
+              e.preventDefault()
+          setConnect(true)
+            }
+            }><ScheduleMeeting></ScheduleMeeting></button>
+           
+          )}
         </div>
       </div>
     </section>
+  );
+};
+
+const ScheduleMeeting = () => {
+  const [arrow, setArrow] = useState({ width: "0px" });
+
+  return (
+    <div
+      onMouseLeave={() => setArrow({ width: "0px" })}
+      onMouseEnter={() => setArrow({ width: "20px" })}
+      className="relative py-2 px-6 rounded-xl border-opacity-10 flex items-center gap-5 text-[24px] bg-black bg-opacity-5 backdrop-blur-[25px] border border-[#01FFD1]"
+    >
+      <span>Schedule your meeting</span>
+      <div className="flex items-center relative">
+        <div className="w-5 h-[2px] bg-white duration-200" style={arrow} />
+        <span className="absolute right-0 translate-x-1/2">
+          <LiaAngleRightSolid />
+        </span>
+      </div>
+    </div>
   );
 };
 

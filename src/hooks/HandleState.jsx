@@ -34,10 +34,9 @@ const HandleState = ({ children }) => {
       setEmail(data.user.email);
       setPicture(data.user.picture);
 
-      console.log(data);
     } catch (err) {
       setUser(false);
-      console.log(err);
+      // toast.error("Something went wrong")
       // dispatch(userNotExists()); // Handle errors and dispatch an error action
     }
   };
@@ -97,7 +96,6 @@ const HandleState = ({ children }) => {
         `${server}/api/v1/request/myrequest`,
         config
       );
-      console.log(data)
       if (data.success === true) {
         setAlreadyreq(true);
       } else {

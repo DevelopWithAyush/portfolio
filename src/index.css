@@ -36,11 +36,38 @@ html::-webkit-scrollbar-thumb {
     background: #01FFD1;
     border-radius: 1rem;
 }
-.connect{
-    transform: translateY(66px);
-    transition: all ease-in-out 400ms ;
+.connect {
+    transform: translateY(60px);
+    transition: all ease-in-out 400ms;
 }
-.connect-parent:hover .connect{ 
 
-    transform: translateY(-69px);
+.connect-parent:hover .connect {
+    transform: translateY(-63px);
 }
+
+@media (min-width: 640px) {
+    .connect {
+            transform: translateY(60px);
+            transition: all ease-in-out 400ms;
+        }
+    
+        .connect-parent:hover .connect {
+            transform: translateY(-63px);
+        }
+    /* Styles for screens 640px and above */
+}
+
+/* Medium devices (md) */
+@media (min-width: 768px) {
+    /* Styles for screens 768px and above */
+    .connect {
+            transform: translateY(66px);
+            transition: all ease-in-out 400ms;
+        }
+    
+        .connect-parent:hover .connect {
+            transform: translateY(-69px);
+        }
+}
+
+

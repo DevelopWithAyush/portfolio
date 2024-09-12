@@ -24,7 +24,7 @@ const ConnectPage = () => {
     existingRequest();
   }, []);
   return (
-    <section className="container relative   mt-[150px] w-max-[88rem] mx-auto">
+    <section className="container relative   mt-[150px] w-max-[88rem] mx-auto px-3">
       <div className=" -z-1 w-[300px] aspect-square bg-[#01FFD1] absolute bottom-0 right-0   rounded-full blur-[200px]" />{" "}
       <div className=" z-10 flex flex-row  bg-white bg-opacity-5  rounded-2xl ">
         <div className="hidden  w-[50%] relative overflow-hidden   xl:flex flex-col items-center justify-center   ">
