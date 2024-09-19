@@ -3,6 +3,7 @@ import chatapp from "../assets/images/chatapp.png";
 import portfolio from "../assets/images/Portfolio.png";
 import dashpannel from "../assets/images/dashpannel.png";
 import gramzo from "../assets/images/gramzo.png";
+import medZ from "../assets/images/Desktop - 3.png";
 
 const projects = [
   {
@@ -25,7 +26,14 @@ const projects = [
     img: portfolio,
     url: "https://portfolio-82ay.vercel.app",
     description:
-      "   A sleek portfolio website built with React, Node.js, Express, and Tailwind CSS, showcasing my skills, projects, and experience in web development and design. ",
+    "   A sleek portfolio website built with React, Node.js, Express, and Tailwind CSS, showcasing my skills, projects, and experience in web development and design. ",
+  },
+  {
+    name: "10medZ",
+    img: medZ,
+    url: "https://10medz-frontend.vercel.app/",
+    description:
+      "10Medz is a web platform specializing in 10-minute medicine deliveries for hospitals and homes, ensuring fast and reliable service.",
   },
   {
     name: "E-commerce Dashboard",
