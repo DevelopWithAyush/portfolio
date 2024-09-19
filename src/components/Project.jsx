@@ -24,7 +24,7 @@ const projects = [
   {
     name: "developwithayush",
     img: portfolio,
-    url: "https://portfolio-82ay.vercel.app",
+    url: "https://portfolio-henna-nine-96.vercel.app/",
     description:
     "   A sleek portfolio website built with React, Node.js, Express, and Tailwind CSS, showcasing my skills, projects, and experience in web development and design. ",
   },
