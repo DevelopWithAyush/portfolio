@@ -8,7 +8,7 @@ const Herosection = () => {
               <img className='z-10 relative' src={ayush} alt="image" />
           </div>
           {/* <div> */}
-              <p className=' relative xl:absolute right-0 font-extrabold text-[#FFF] font-akira leading-[110%] capitalize  text-[24px]  md:text-[48px] '>hey <span className='text-[#01FFD1]'>,</span> <br />i am Video Editor <br />& web <span className='text-[#01FFD1]'>developer</span></p>
+              <p className=' relative xl:absolute right-0 font-extrabold text-[#FFF] font-akira leading-[110%] capitalize  text-[24px]  md:text-[48px] '>hey <span className='text-[#01FFD1]'>,</span> <br />i am  web <span className='text-[#01FFD1]'>developer</span></p>
           {/* </div> */}
       
     </section>

@@ -25,19 +25,15 @@ const Aboutme = () => {
           <DownLine />
         </div>
         <div className="col-span-11  pt-[100px]  flex flex-col items-center justify-center pr-3 md:pr-5 xl:pr-7">
-                  <p className="text-[#B7B7B7] text-[16px] md:text-[20px] font-medium leading-[139%] max-w-[800px] rounded-xl px-6 md:px-7 xl:px-12 py-6 bg-white bg-opacity-5">
-                      My name is <span className="text-[#01FFD1]">Ayush Dubey</span>, and
-                      I am a 21-year-old web developer and video editor. Over the past two
-                      years, I have immersed myself in the world of web development,
-                      mastering various technologies and building a diverse range of
-                      projects, including e-commerce platforms, chat applications, video
-                      calling solutions, and course-selling websites. <br />
-                      In the last six months, I've also ventured into video editing, a
-                      craft I've quickly grown passionate about. I enjoy the process of
-                      creating and refining content and am always excited to learn new
-                      technologies and improve my skills.
-                  </p>
-
+          <p className="text-[#B7B7B7] text-[16px] md:text-[20px] font-medium leading-[139%] max-w-[800px] rounded-xl px-6 md:px-7 xl:px-12 py-6 bg-white bg-opacity-5">
+            My name is <span className="text-[#01FFD1]">Ayush Dubey</span>, and
+            I am a 21-year-old web developer. Over the past two years, I have
+            immersed myself in the world of web development, mastering various
+            technologies and building a diverse range of projects, including
+            e-commerce platforms and chat applications
+            <br />I enjoy the process of learn new technologies and improve my
+            skills.
+          </p>
         </div>
       </div>
     </section>
@@ -88,7 +84,7 @@ const Emoji = () => {
       }}
     >
       {/* <div className=" bg-[#3cfc46] w-[50%] h-[50%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 blur-[20px]"></div> */}
-      <img className="w-full"  src={myIcon} alt="" />
+      <img className="w-full" src={myIcon} alt="" />
     </div>
   );
 };

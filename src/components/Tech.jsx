@@ -20,7 +20,6 @@ const reviews = [
   {
     img: "https://res.cloudinary.com/dpqsatnvt/image/upload/v1714530325/favicon_mibjqr.ico",
   },
-
   {
     img: "https://res.cloudinary.com/dpqsatnvt/image/upload/v1714530314/nextjs-icon-svgrepo-com_nktaag.png",
   },
@@ -28,13 +27,10 @@ const reviews = [
     img: "https://res.cloudinary.com/dpqsatnvt/image/upload/v1714530772/logo-javascript_mgz5j4.svg",
   },
   {
-    img: "https://res.cloudinary.com/dpqsatnvt/image/upload/v1714530574/adobe-after-effects-icon_iyybug.svg",
-  },
-  {
-    img: "https://res.cloudinary.com/dpqsatnvt/image/upload/v1714530316/adobe-premiere-pro-icon_2_p3tpoo.png",
-  },
-  {
     img: "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg",
+  },
+  {
+    img: "https://res.cloudinary.com/drpaz9o8h/image/upload/v1734863073/ewyylbrjq3qfg45om4t0.png",
   },
 ];
 const Tech = () => {
@@ -136,7 +132,7 @@ const P = () => {
     >
       Tech{" "}
       <span className="font-medium text-[#797979]">
-        {`that we are use to grow you business.`}
+        {`that I am use to make you website.`}
       </span>
     </p>
   );
